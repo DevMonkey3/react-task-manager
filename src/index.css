@@ -1,0 +1,210 @@
+body {
+    background-color: #1e1e2f;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3c3b6e, #6b64c4);
+  }
+  
+  .task-manager-container {
+    background-color: #2a2a40;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #3c3b6e;
+  }
+  
+  .main {
+    padding: 20px;
+  }
+  
+  .footer {
+    background: #3c3b6e;
+    color: #d4d4d8;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-top: 2px solid #6b64c4;
+  }
+  
+  .input-frm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .task-input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .task-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .task-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    border-color: #e52e71;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(60, 59, 110, 0.8);
+    border: 2px solid rgba(107, 100, 196, 0.5);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: transform 0.2s, background 0.3s ease;
+  }
+  
+  .task-item:hover {
+    transform: translateY(-5px);
+    background: rgba(60, 59, 110, 0.9);
+  }
+  
+  .task-item.completed {
+    background: linear-gradient(90deg, #28a745, #20c997);
+    color: #ffffff;
+  }
+  
+  .task-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-complete {
+    background: #20c997;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .btn-complete:hover {
+    background: #17a589;
+  }
+  
+  .btn-delete {
+    background: #dc3545;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .btn-delete:hover {
+    background: #c82333;
+  }
+  
+  .title-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .dex-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .title-text:focus,
+  .dex-text:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    border-color: #e52e71;
+  }
+  
+  h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    color: #d4d4d8;
+  }
+  
